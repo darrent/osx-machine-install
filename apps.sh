@@ -24,6 +24,7 @@ apps=(
   quicklook-json
   macvim
   xquartz
+  shiftit
 )
 
 # fonts
