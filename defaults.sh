@@ -75,6 +75,9 @@ echo "Disable smart quotes and smart dashes as theyâ€™re annoying when typi
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
+echo ""
+echo "Change default location for screenshots"
+defaults write com.apple.screencapture location ~/Pictures/Screenshots
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
