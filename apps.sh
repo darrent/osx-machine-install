@@ -25,6 +25,7 @@ apps=(
   macvim
   xquartz
   shiftit
+  p4merge
 )
 
 # fonts
