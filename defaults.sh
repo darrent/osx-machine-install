@@ -331,4 +331,11 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 # Kill affected applications
 ###############################################################################
 
-echo "Done!"
+for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" \
+  "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
+  "Terminal" "Twitter" "iCal"; do
+  killall "${app}" > /dev/null 2>&1
+done
+
+echo "Done. Note that some of these changes require a logout/restart to take effect."
+
